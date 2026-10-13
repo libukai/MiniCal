@@ -108,9 +108,10 @@ public enum ICSParser {
             guard let parsed = URL(string: value), parsed.scheme != nil else { throw ICSImportError("URL 无效。") }
             url = parsed
         } else { url = nil }
-        let recurrence = try single("RRULE", in: properties).map { try recurrence($0.value) } ?? .none
+        let eventRecurrence: EventDraft.Recurrence = try single("RRULE", in: properties)
+            .map { try Self.recurrence($0.value) } ?? EventDraft.Recurrence.none
         let draft = EventDraft(calendarID: calendarID, title: title, start: start, end: end, isAllDay: allDay,
-                               notes: notes, location: location, url: url, alarmMinutes: alarms, recurrence: recurrence)
+                               notes: notes, location: location, url: url, alarmMinutes: alarms, recurrence: eventRecurrence)
         try draft.validate()
         return draft
     }

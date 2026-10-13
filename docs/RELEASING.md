@@ -30,7 +30,7 @@ export NOTARY_PROFILE='minical-notary'
 
 发布前需使用**启用默认 Gatekeeper** 的另一台 Mac 验证真实下载、挂载、拖入 Applications、启动、权限请求、菜单栏及 Widget。维护者的本地启动验证不能替代下载用户的信任检查。
 
-准备 GitHub Release 时附上 DMG、SHA256、版本说明和源码标签；上传发布由维护者明确执行。当前本地准备不包含 GitHub 远程发布。
+准备 GitHub Release 时附上 DMG、SHA256、版本说明和源码标签；上传发布由维护者明确执行。未经公证的包必须保留 `local` 文件名，并在版本说明中明确签名状态及安装限制。
 
 ## 签名边界
 

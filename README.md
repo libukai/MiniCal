@@ -16,7 +16,7 @@
 
 ## 安装与签名
 
-安装 DMG 时，将 `MiniCal.app` 拖入 Applications，再打开应用。日历及提醒事项权限在“事件”页按需授权。
+从 [GitHub Releases](https://github.com/libukai/MiniCal/releases) 下载 ARM64 DMG，将 `MiniCal.app` 拖入 Applications，再打开应用。日历及提醒事项权限在“事件”页按需授权。
 
 下载文件要区分两种发行形式：
 
@@ -73,6 +73,6 @@ script                 构建、测试、打包、公证与图标生成
 config                 Widget entitlements
 ```
 
-本地验证环境为 macOS 27 / Swift 6.4 / SDK 27。CI 已配置 ARM64 的 macOS 15 与 macOS 26 构建及测试；仓库公开后才能确认远程运行结果。
+本地验证环境为 macOS 27 / Swift 6.4 / SDK 27。ARM64 的 macOS 15 与 macOS 26 构建及测试结果见 [GitHub Actions](https://github.com/libukai/MiniCal/actions)。最低部署目标为 macOS 14，该版本尚未实际验收。
 
 参与贡献请阅读 [CONTRIBUTING](CONTRIBUTING.md)。许可见 [LICENSE](LICENSE)。

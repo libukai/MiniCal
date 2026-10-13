@@ -6,4 +6,6 @@ MiniCal
 
 需要 Apple Silicon（ARM64）、macOS14或更高版本。
 名称包含 local 的包为开发测试包，采用ad-hoc签名、未经Apple公证；它不保证在默认Gatekeeper下下载即开。
+若提示无法验证开发者，且你确认下载来源及校验值可信：先尝试打开应用，再进入“系统设置 → 隐私与安全性”，在系统提供该选项时针对 MiniCal 选择“仍要打开”。受管理的设备可能不允许此操作。
+官方说明：https://support.apple.com/zh-cn/102445
 正式用户发行包应由维护者使用Developer ID签名并完成Apple公证。
