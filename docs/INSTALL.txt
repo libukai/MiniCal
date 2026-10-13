@@ -1,0 +1,9 @@
+MiniCal
+
+将 MiniCal.app 拖入 Applications 后打开。点击菜单栏日历图标展开面板，切换应用后收起；图钉可以固定窗口。
+在“事件”设置页按需授权系统日历与提醒事项。
+桌面右键“编辑小组件”，查找 MiniCal，选择小、中或大尺寸。
+
+需要 Apple Silicon（ARM64）、macOS14或更高版本。
+名称包含 local 的包为开发测试包，采用ad-hoc签名、未经Apple公证；它不保证在默认Gatekeeper下下载即开。
+正式用户发行包应由维护者使用Developer ID签名并完成Apple公证。
